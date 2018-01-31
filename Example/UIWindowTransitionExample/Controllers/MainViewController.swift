@@ -18,8 +18,18 @@ class MainViewController: UIViewController {
     
     @IBAction func buttonDidTap(_ sender: UIButton) {
         
+        // Window which need set root view controller
         guard let window = UIApplication.shared.windows.first else { return }
         
+        /*
+         Animation for UIWindow transition:
+         - Fade: center -> center (animated change alpha)
+         - zoom: center -> center (scale from `scale` to 1.0)
+         - toTop: bottom -> top
+         - toBottom: top -> bottom
+         - toLeft: right -> left
+         - toRight: left -> right
+         */
         let animation: UIWindowTransitionOptions.Transition
         
         switch sender.tag {
@@ -33,12 +43,18 @@ class MainViewController: UIViewController {
         default: return
         }
         
+        // You can create options if you would like animated set root view controller.
+        var options = UIWindowTransitionOptions(transition: animation)
+        options.duration = 0.4 // Set custom duration in seconds if need. Default is 0.25s
+        options.curve = .easeIn // Set custom curve if need. Default is linear
+        
+        // New root view controller
         let controller = SuccesViewController.controller
         
-        var options = UIWindowTransitionOptions(transition: animation)
-        options.duration = 0.4
-        options.curve = .easeIn
-        
+        /*
+         controller - new rootViewController
+         transitionOptions - options for transition. If you put `nil`, viewController will change without animation
+         */
         window.setRootViewController(controller, transitionOptions: options)
         
     }

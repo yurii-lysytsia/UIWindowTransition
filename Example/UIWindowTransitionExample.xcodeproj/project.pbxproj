@@ -13,8 +13,7 @@
 		DAA25CEA20224B96002F70AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA25CE920224B96002F70AE /* Assets.xcassets */; };
 		DAA25CED20224B96002F70AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA25CEB20224B96002F70AE /* LaunchScreen.storyboard */; };
 		DAA25CF520224C29002F70AE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA25CF420224C29002F70AE /* MainViewController.swift */; };
-		DAA25CF820224CC6002F70AE /* UIWindow+UIWindowTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA25CF620224CC6002F70AE /* UIWindow+UIWindowTransition.swift */; };
-		DAA25CF920224CC6002F70AE /* UIWindowTransitionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA25CF720224CC6002F70AE /* UIWindowTransitionOptions.swift */; };
+		DAA25CFE202260B1002F70AE /* UIWindowTransitionOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA25CFD202260B1002F70AE /* UIWindowTransitionOptions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,8 +25,7 @@
 		DAA25CEC20224B96002F70AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA25CEE20224B96002F70AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAA25CF420224C29002F70AE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
-		DAA25CF620224CC6002F70AE /* UIWindow+UIWindowTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIWindow+UIWindowTransition.swift"; sourceTree = "<group>"; };
-		DAA25CF720224CC6002F70AE /* UIWindowTransitionOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIWindowTransitionOptions.swift; sourceTree = "<group>"; };
+		DAA25CFD202260B1002F70AE /* UIWindowTransitionOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIWindowTransitionOptions.swift; path = ../../../Source/UIWindowTransitionOptions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,8 +71,7 @@
 		DAA25CFA20224CCA002F70AE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				DAA25CF620224CC6002F70AE /* UIWindow+UIWindowTransition.swift */,
-				DAA25CF720224CC6002F70AE /* UIWindowTransitionOptions.swift */,
+				DAA25CFD202260B1002F70AE /* UIWindowTransitionOptions.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -171,9 +168,8 @@
 			files = (
 				DAA25CF520224C29002F70AE /* MainViewController.swift in Sources */,
 				DAA25CE520224B96002F70AE /* SuccesViewController.swift in Sources */,
-				DAA25CF920224CC6002F70AE /* UIWindowTransitionOptions.swift in Sources */,
-				DAA25CF820224CC6002F70AE /* UIWindow+UIWindowTransition.swift in Sources */,
 				DAA25CE320224B96002F70AE /* AppDelegate.swift in Sources */,
+				DAA25CFE202260B1002F70AE /* UIWindowTransitionOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
