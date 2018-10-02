@@ -1,0 +1,16 @@
+=== v1.2 ===
+- Full code refactoring
+- Converted to Swift 4.2
+- Availability for iOS 8+
+- Added a lot of new animations such as:
+    - none
+    - flipFromLeft
+    - flipFromRight
+    - flipFromBottom
+    - curlUp
+    - curlDown
+    - zoomOut
+    - zoomIn
+    - sliceVertical
+    - sliceHorizontal
+    - and already existing: fade, fromLeft, fromRight, fromTop, fromBottom

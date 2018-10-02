@@ -5,23 +5,23 @@
 [![language](https://img.shields.io/badge/pod-4.0.0-blue.svg)]()
 [![license](https://img.shields.io/badge/license-MIT-lightgray.svg)]()
 
-UIWindowTransition is easy to use source for change UIWindow RootViewController with animation. UIWindowTransition written in Swift 4.0
+UIWindowTransition is easy to use source for change UIWindow RootViewController with animation. UIWindowTransition written in Swift 4.0.
+
+!!! ATTENTION !!! 
+The documentation is not accurate because the sources are updated.
 
 - [Requirements](#requirements)
-
 - [Installation](#installation)
-- [CocoaPods](#CocoaPods)
-- [Manually](#Manually)
-    
+    - [CocoaPods](#CocoaPods)
+    - [Manually](#Manually)
 - [Usage](#usage)
-
 - [License](#license)
 
 ## Requirements
 
 - iOS 8.0+
-- Xcode 8.3+
-- Swift 3.1+
+- Xcode 9.0+
+- Swift 4.0+
 
 ## Installation
 ### CocoaPods
