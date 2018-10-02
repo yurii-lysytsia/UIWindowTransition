@@ -188,7 +188,7 @@ extension UIWindow {
     /// - Parameters:
     ///   - viewController: new root view controller to set
     ///   - style: style of the transition
-    public func transition(to viewController: UIViewController, with style: TransitionStyle) {
+    public func transition(to viewController: UIViewController, style: TransitionStyle) {
         let transition = Transition(style: style)
         self.transition(transition, to: viewController)
     }
