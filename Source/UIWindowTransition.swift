@@ -48,23 +48,23 @@ extension UIWindow {
     }
     
     /// Style for window root view controller transition
-    public enum TransitionStyle: Int, CaseIterable {
-        case none = 0
-        case fade = 1
-        case flipFromLeft = 2
-        case flipFromRight = 3
-        case flipFromTop = 4
-        case flipFromBottom = 5
-        case curlUp = 6
-        case curlDown = 7
-        case fromLeft = 10
-        case fromRight = 11
-        case fromTop = 12
-        case fromBottom = 13
-        case zoomOut = 20
-        case zoomIn = 21
-        case sliceVertical = 30
-        case sliceHorizontal = 31
+    public enum TransitionStyle: String, CaseIterable {
+        case none
+        case fade
+        case flipFromLeft
+        case flipFromRight
+        case flipFromTop
+        case flipFromBottom
+        case curlUp
+        case curlDown
+        case fromLeft
+        case fromRight
+        case fromTop
+        case fromBottom
+        case zoomOut
+        case zoomIn
+        case sliceVertical
+        case sliceHorizontal
     }
     
     /// Set the root view controller of this window with transition
@@ -198,7 +198,7 @@ extension UIWindow {
     /// - Parameter viewController: new root view controller to set
     public func randomTransition(to viewController: UIViewController) {
         let style = TransitionStyle.allCases.randomElement() ?? .none
-        self.transition(to: viewController, with: style)
+        self.transition(to: viewController, style: style)
     }
     
 }

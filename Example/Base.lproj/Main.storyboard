@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.25" minValue="0.25" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="osY-a6-ZTc">
+                                <rect key="frame" x="18" y="318.5" width="339" height="31"/>
+                                <connections>
+                                    <action selector="durationSliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="BKc-ar-Mks"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Transition duration 0.25s" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZpF-HE-eba">
+                                <rect key="frame" x="92.5" y="358.5" width="190" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qgq-t4-MIX">
+                                <rect key="frame" x="108" y="419" width="159" height="30"/>
+                                <state key="normal" title="Set root view controller"/>
+                                <connections>
+                                    <action selector="transitionButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ek9-7j-x5D"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qgq-t4-MIX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="A17-Os-97g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="osY-a6-ZTc" secondAttribute="trailing" constant="20" id="A3J-r2-CPU"/>
+                            <constraint firstItem="osY-a6-ZTc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="B89-AG-ZH7"/>
+                            <constraint firstItem="ZpF-HE-eba" firstAttribute="top" secondItem="osY-a6-ZTc" secondAttribute="bottom" constant="10" id="DKv-l8-nIR"/>
+                            <constraint firstItem="ZpF-HE-eba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PJX-PO-2RF"/>
+                            <constraint firstItem="qgq-t4-MIX" firstAttribute="top" secondItem="ZpF-HE-eba" secondAttribute="bottom" constant="40" id="VmR-VA-S20"/>
+                            <constraint firstItem="osY-a6-ZTc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="gOT-cM-B32"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="durationLabel" destination="ZpF-HE-eba" id="A5W-Ua-JFV"/>
+                        <outlet property="durationSlider" destination="osY-a6-ZTc" id="A9B-L8-iSm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
