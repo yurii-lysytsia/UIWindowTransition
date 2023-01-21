@@ -5,12 +5,16 @@
 [![language](https://img.shields.io/badge/pods-available-green.svg)]()
 [![license](https://img.shields.io/badge/license-MIT-lightgray.svg)]()
 
+- [Deprecated!](#deprecated)
 - [Requirements](#requirements)
 - [Installation](#installation)
     - [CocoaPods](#CocoaPods)
     - [Manually](#Manually)
 - [Usage](#usage)
 - [License](#license)
+
+## ⚠️ Deprecated!
+This repository is currently unsupported because it become a part of [AirKit](https://github.com/yurii-lysytsia/AirKit/blob/master/AirKit/Source/UIKit/UIWindow%2BAirKit.swift) repository.
 
 ## Requirements
 
